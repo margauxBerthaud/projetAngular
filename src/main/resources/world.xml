@@ -11,7 +11,7 @@ and open the template in the editor.
     xsi:noNamespaceSchemaLocation='jaxb/world/worldSchema.xsd'>
     <name>Les Marseillais</name>
     <logo></logo>
-    <money>0</money>
+    <money>10</money>
     <score>0</score>
     <totalangels>0</totalangels>
     <activeangels>0</activeangels>
@@ -108,91 +108,118 @@ and open the template in the editor.
         <pallier>
             <name>Cash Upgrades 1</name>
             <logo></logo>
-            <seuil>15000</seuil>
-            <idcible>2</idcible>
-            <ratio></ratio>
-            <typeratio></typeratio>
+            <seuil>100</seuil>
+            <idcible>1</idcible>
+            <ratio>2</ratio>
+            <typeratio>vitesse</typeratio>
             <unlocked>False</unlocked>
         </pallier>
         <pallier>
             <name>Cash Upgrades 2</name>
             <logo></logo>
-            <seuil>15000</seuil>
-            <idcible>2</idcible>
-            <ratio></ratio>
-            <typeratio></typeratio>
+            <seuil>1000</seuil>
+            <idcible>1</idcible>
+            <ratio>2</ratio>
+            <typeratio>vitesse</typeratio>
             <unlocked>False</unlocked>
         </pallier>
         <pallier>
-            <name>Cash Upgrades 1</name>
+            <name>Cash Upgrades 3</name>
             <logo></logo>
-            <seuil>15000</seuil>
+            <seuil>3000</seuil>
             <idcible>2</idcible>
-            <ratio></ratio>
-            <typeratio></typeratio>
+            <ratio>2</ratio>
+            <typeratio>gain</typeratio>
             <unlocked>False</unlocked>
         </pallier>
         <pallier>
-            <name>Cash Upgrades 1</name>
+            <name>Cash Upgrades 4</name>
             <logo></logo>
-            <seuil>15000</seuil>
-            <idcible>2</idcible>
-            <ratio></ratio>
-            <typeratio></typeratio>
+            <seuil>6000</seuil>
+            <idcible>1</idcible>
+            <ratio>2</ratio>
+            <typeratio>gain</typeratio>
             <unlocked>False</unlocked>
         </pallier>
         <pallier>
-            <name>Cash Upgrades 1</name>
+            <name>Cash Upgrades 5</name>
             <logo></logo>
-            <seuil>15000</seuil>
-            <idcible>2</idcible>
-            <ratio></ratio>
-            <typeratio></typeratio>
+            <seuil>12000</seuil>
+            <idcible>1</idcible>
+            <ratio>2</ratio>
+            <typeratio>vitesse</typeratio>
             <unlocked>False</unlocked>
         </pallier>
         <pallier>
-            <name>Cash Upgrades 1</name>
+            <name>Cash Upgrades 6</name>
             <logo></logo>
             <seuil>15000</seuil>
-            <idcible>2</idcible>
-            <ratio></ratio>
-            <typeratio></typeratio>
+            <idcible>1</idcible>
+            <ratio>2</ratio>
+            <typeratio>vitesse</typeratio>
             <unlocked>False</unlocked>
         </pallier>
         <pallier>
-            <name>Cash Upgrades 1</name>
+            <name>Cash Upgrades 7</name>
             <logo></logo>
-            <seuil>15000</seuil>
+            <seuil>20000</seuil>
             <idcible>2</idcible>
-            <ratio></ratio>
-            <typeratio></typeratio>
+            <ratio>2</ratio>
+            <typeratio>vitesse</typeratio>
             <unlocked>False</unlocked>
         </pallier>
         <pallier>
-            <name>Cash Upgrades 1</name>
+            <name>Cash Upgrades 8</name>
             <logo></logo>
-            <seuil>15000</seuil>
-            <idcible>2</idcible>
-            <ratio></ratio>
-            <typeratio></typeratio>
+            <seuil>30000</seuil>
+            <idcible>1</idcible>
+            <ratio>2</ratio>
+            <typeratio>gain</typeratio>
             <unlocked>False</unlocked>
         </pallier>
         <pallier>
-            <name>Cash Upgrades 1</name>
+            <name>Cash Upgrades 9</name>
             <logo></logo>
-            <seuil>15000</seuil>
+            <seuil>60000</seuil>
             <idcible>2</idcible>
-            <ratio></ratio>
-            <typeratio></typeratio>
+            <ratio>2</ratio>
+            <typeratio>gain</typeratio>
             <unlocked>False</unlocked>
         </pallier>
         <pallier>
-            <name>Cash Upgrades 1</name>
+            <name>Cash Upgrades 10</name>
             <logo></logo>
-            <seuil>15000</seuil>
-            <idcible>2</idcible>
-            <ratio></ratio>
-            <typeratio></typeratio>
+            <seuil>120000</seuil>
+            <idcible>1</idcible>
+            <ratio>2</ratio>
+            <typeratio>vitesse</typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+        <pallier>
+            <name>Angel Upgrades 1</name>
+            <logo></logo>
+            <seuil>120000</seuil>
+            <idcible>0</idcible>
+            <ratio>2</ratio>
+            <typeratio>ange</typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+        <pallier>
+            <name>Angel Upgrades 2</name>
+            <logo></logo>
+            <seuil>240000</seuil>
+            <idcible>0</idcible>
+            <ratio>2</ratio>
+            <typeratio>ange</typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+        <pallier>
+            <name>Cash Upgrades 3</name>
+            <logo></logo>
+            <seuil>480000</seuil>
+            <idcible>0</idcible>
+            <ratio>2</ratio>
+            <typeratio>ange</typeratio>
             <unlocked>False</unlocked>
         </pallier>
     </allunlocks>
