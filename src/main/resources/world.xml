@@ -21,7 +21,7 @@ and open the template in the editor.
         <product>
             <id>1</id>
             <name>Julien Tanti</name>
-            <logo></logo>
+            <logo>http://localhost:8080/images/kevin.jpg</logo>
             <cout>4</cout>
             <croissance>1,07</croissance>
             <revenu>1</revenu>
