@@ -24,14 +24,14 @@ public class Services {
     
     
 
-    World readWorldFromXml() throws JAXBException{
+    public World readWorldFromXml() throws JAXBException{
         JAXBContext cont = JAXBContext.newInstance(World.class);
         Unmarshaller u = cont.createUnmarshaller();
         World world = (World) u.unmarshal(input);
         return world;
     }
     
-    void saveWorldToXml(World world) throws FileNotFoundException, JAXBException{
+    public void saveWorldToXml(World world) throws FileNotFoundException, JAXBException{
         OutputStream output = new FileOutputStream("world.xml");
         JAXBContext cont = JAXBContext.newInstance(World.class);
         Marshaller m = cont.createMarshaller();
