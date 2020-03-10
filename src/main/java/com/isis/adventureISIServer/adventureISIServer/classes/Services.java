@@ -8,8 +8,10 @@ package com.isis.adventureISIServer.adventureISIServer.classes;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.List;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
@@ -24,17 +26,70 @@ public class Services {
     
     
 
-    public World readWorldFromXml() throws JAXBException{
+    public World readWorldFromXml(String username) throws JAXBException{
+        try {
+        File file = new File(username+"-world.xml");    
+        JAXBContext cont = JAXBContext.newInstance(World.class);
+        Unmarshaller u =cont.createUnmarshaller();
+        World world =(World) u.unmarshal(file);
+        return world;
+        }
+        catch (Exception e) {
         JAXBContext cont = JAXBContext.newInstance(World.class);
         Unmarshaller u = cont.createUnmarshaller();
         World world = (World) u.unmarshal(input);
         return world;
+        }
+     
     }
     
-    public void saveWorldToXml(World world) throws FileNotFoundException, JAXBException{
-        OutputStream output = new FileOutputStream("world.xml");
+    public void saveWorldToXml(World world, String username) throws FileNotFoundException, JAXBException, IOException{
+        OutputStream output = new FileOutputStream(username+"-"+"world.xml");
         JAXBContext cont = JAXBContext.newInstance(World.class);
         Marshaller m = cont.createMarshaller();
         m.marshal(world, output);
+        output.close();
     }
+    
+    public World getWorld(String username) throws JAXBException, FileNotFoundException, IOException{
+    
+        World monde =  readWorldFromXml(username);
+            saveWorldToXml(monde, username);
+            return monde;
+    }
+    
+    public ProductType findProductByID(World world, int id ){
+        ProductType pt = null;
+        List<ProductType> t= (List<ProductType>) world.getProducts();
+        for (ProductType a :t){
+            if (id == a.id){
+                pt=a;
+            }
+        }
+        return pt;
+    }
+    
+    public Boolean updateProduct(String username, ProductType newproduct) throws JAXBException, IOException{
+        World world = getWorld(username);
+        ProductType product = findProductByID(world, newproduct.getId());
+        if (product == null){
+            return false;
+        }
+        
+        int qtchange =newproduct.getQuantite() - product.getQuantite();
+        if (qtchange>0){
+            double argent =world.getMoney();
+            double prix= newproduct.cout*qtchange;
+            double argentRestant = argent- prix;
+            world.setMoney(argentRestant);
+            //world.set
+        }
+        else {
+            
+        }
+        
+        saveWorldToXml(world, username);
+        return true;
+    }
+    
 }
