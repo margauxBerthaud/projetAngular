@@ -21,7 +21,7 @@ and open the template in the editor.
         <product>
             <id>1</id>
             <name>Julien Tanti</name>
-            <logo>http://localhost:8080/images/kevin.jpg</logo>
+            <logo>julien-tanti.jpg</logo>
             <cout>4</cout>
             <croissance>1,07</croissance>
             <revenu>1</revenu>
@@ -34,7 +34,7 @@ and open the template in the editor.
         <product>
             <id>2</id>
             <name>Jessica</name>
-            <logo></logo>
+            <logo>jessica-dans-premiere-tele-rio.jpg</logo>
             <cout>60</cout>
             <croissance>1,15</croissance>
             <revenu>60</revenu>
@@ -88,8 +88,8 @@ and open the template in the editor.
             <unlocked>False</unlocked>
         </pallier>
         <pallier>
-            <name>JCVD</name>
-            <logo></logo>
+            <name>Petit Mayombo</name>
+            <logo>lePetitMayombo.jpg</logo>
             <seuil>1000</seuil>
             <idcible>1</idcible>
             <ratio></ratio>
@@ -98,7 +98,7 @@ and open the template in the editor.
         </pallier>
         <pallier>
             <name>Catalia</name>
-            <logo></logo>
+            <logo>Manager2.jpg</logo>
             <seuil>15000</seuil>
             <idcible>2</idcible>
             <ratio></ratio>
