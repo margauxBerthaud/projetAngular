@@ -69,6 +69,17 @@ public class Services {
         return pt;
     }
     
+    public PallierType findManagerByName(World world, String name){
+        PallierType manager=null;
+        List<PallierType> pt = (List<PallierType>) world.getManagers();
+        for (PallierType a: pt){
+            if(name.equals(a.getName())){
+                manager=a;
+            }
+        }
+        return manager;
+    }
+    
     public Boolean updateProduct(String username, ProductType newproduct) throws JAXBException, IOException{
         World world = getWorld(username);
         ProductType product = findProductByID(world, newproduct.getId());
@@ -96,6 +107,27 @@ public class Services {
         
         saveWorldToXml(world, username);
         return true;
+    }
+    public boolean updateManager(String username,PallierType newmanager) throws JAXBException, IOException{
+        World world =getWorld(username);
+        PallierType manager = findManagerByName(world, newmanager.getName());
+        
+        if (manager == null){
+            return false;
+        }
+        manager.setUnlocked(true);
+        
+        ProductType product = findProductByID(world, manager.getIdcible());
+        if (product==null){
+            return false;
+        }
+        double argent = world.getMoney();
+        double prix = manager.getSeuil();
+        double cout = argent-prix;
+        
+        saveWorldToXml(world, username);
+        return true;
+        
     }
     
 }
