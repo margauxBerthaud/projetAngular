@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.List;
+import java.util.Objects;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
@@ -44,18 +45,50 @@ public class Services {
     }
     
     public void saveWorldToXml(World world, String username) throws FileNotFoundException, JAXBException, IOException{
+        
         OutputStream output = new FileOutputStream(username+"-"+"world.xml");
         JAXBContext cont = JAXBContext.newInstance(World.class);
         Marshaller m = cont.createMarshaller();
+        
         m.marshal(world, output);
+        
         output.close();
     }
     
     public World getWorld(String username) throws JAXBException, FileNotFoundException, IOException{
-    
+        
         World monde =  readWorldFromXml(username);
-            saveWorldToXml(monde, username);
+          
+        saveWorldToXml(monde, username);
             return monde;
+    }
+    
+    public void updateMonde(World world){
+        Long derniereMaj= world.getLastupdate();
+        Long maintenant = System.currentTimeMillis();
+        Long delta= maintenant-derniereMaj;
+        List<ProductType> pt = (List<ProductType>) world.getProducts();
+        for (ProductType a :pt){
+            if (a.isManagerUnlocked()){
+                int tempsProduit=a.getVitesse();
+                int nbrePd= (int) (delta/tempsProduit);
+                long restant = a.getVitesse()-delta%tempsProduit;
+                double argent =a.getRevenu()*nbrePd;
+                world.setMoney(world.getMoney()+argent);
+                world.setScore(world.getScore()+argent);
+                a.setTimeleft(restant);
+            }
+            else {
+                if (a.getTimeleft()!=0 && a.getTimeleft()<delta){
+                    double argent =a.getRevenu();
+                    world.setMoney(world.getMoney()+argent);
+                    world.setScore(world.getScore()+argent);
+                    
+                }
+                a.setTimeleft(a.getTimeleft()-delta);
+            }
+        }
+        world.setLastupdate(System.currentTimeMillis()); 
     }
     
     public ProductType findProductByID(World world, int id ){
@@ -121,13 +154,20 @@ public class Services {
         if (product==null){
             return false;
         }
+       
+        product.setManagerUnlocked(true);
+        
         double argent = world.getMoney();
         double prix = manager.getSeuil();
         double cout = argent-prix;
+        world.setMoney(cout);
+        
         
         saveWorldToXml(world, username);
         return true;
         
     }
+    
+    
     
 }

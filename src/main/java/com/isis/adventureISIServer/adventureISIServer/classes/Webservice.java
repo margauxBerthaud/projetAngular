@@ -48,5 +48,12 @@ public void putProduct(@Context HttpServletRequest request,ProductType product) 
    services.updateProduct(username, product);
 }
 
+@PUT
+@Path("manager")
+public void putManager(@Context HttpServletRequest request,PallierType manager) throws JAXBException, IOException{
+   String username = request.getHeader("X-user");
+   services.updateManager(username, manager);
+}
+
     
 }
