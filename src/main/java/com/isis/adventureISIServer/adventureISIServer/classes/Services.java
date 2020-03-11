@@ -79,12 +79,18 @@ public class Services {
         int qtchange =newproduct.getQuantite() - product.getQuantite();
         if (qtchange>0){
             double argent =world.getMoney();
-            double prix= newproduct.cout*qtchange;
-            double argentRestant = argent- prix;
+            double q =product.getCroissance();
+            //double prix= newproduct.cout*qtchange;
+            double prix1 = product.getCout();
+            double prix2=prix1*((1-(Math.pow(q, qtchange)))/(1-q));
+            double argentRestant = argent- prix2;
             world.setMoney(argentRestant);
-            //world.set
+            product.setQuantite(newproduct.getQuantite());
+            
+            
         }
         else {
+            product.timeleft=product.vitesse;
             
         }
         

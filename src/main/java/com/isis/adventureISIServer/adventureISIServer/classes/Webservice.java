@@ -43,8 +43,9 @@ public Response getXml(@Context HttpServletRequest request) throws JAXBException
 
 @PUT
 @Path("product")
-public void putProduct(ProductType product){
-   
+public void putProduct(@Context HttpServletRequest request,ProductType product) throws JAXBException, IOException{
+   String username = request.getHeader("X-user");
+   services.updateProduct(username, product);
 }
 
     
