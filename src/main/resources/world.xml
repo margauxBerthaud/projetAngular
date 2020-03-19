@@ -11,11 +11,11 @@ and open the template in the editor.
     xsi:noNamespaceSchemaLocation='jaxb/world/worldSchema.xsd'>
     <name>Les Marseillais</name>
     <logo></logo>
-    <money>10</money>
-    <score>0</score>
-    <totalangels>0</totalangels>
-    <activeangels>0</activeangels>
-    <angelbonus>0</angelbonus>
+    <money>15</money>
+    <score>15</score>
+    <totalangels>1</totalangels>
+    <activeangels>1</activeangels>
+    <angelbonus>2</angelbonus>
     <lastupdate>27/02/2020</lastupdate>
     <products>
         <product>
@@ -23,13 +23,32 @@ and open the template in the editor.
             <name>Julien Tanti</name>
             <logo>julien-tanti.jpg</logo>
             <cout>4</cout>
-            <croissance>1,07</croissance>
-            <revenu>1</revenu>
-            <vitesse>0,5</vitesse>
-            <quantite>0</quantite>
+            <croissance>2</croissance>
+            <revenu>3</revenu>
+            <vitesse>25</vitesse>
+            <quantite>15</quantite>
             <timeleft>200</timeleft>
-            <managerUnlocked>1000</managerUnlocked>
-            <palliers></palliers>
+            <managerUnlocked>false</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>Unlock A1</name>
+                    <logo></logo>
+                    <seuil>30</seuil>
+                    <idcible>0</idcible>
+                    <ratio>1.2</ratio>
+                    <typeratio>vitesse</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Unlock B1</name>
+                    <logo></logo>
+                    <seuil>25</seuil>
+                    <idcible>0</idcible>
+                    <ratio>1.5</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+            </palliers>
         </product>
         <product>
             <id>2</id>
@@ -38,24 +57,61 @@ and open the template in the editor.
             <cout>60</cout>
             <croissance>1,15</croissance>
             <revenu>60</revenu>
-            <vitesse>3</vitesse>
-            <quantite>0</quantite>
+            <vitesse>8</vitesse>
+            <quantite>12</quantite>
             <timeleft>300</timeleft>
             <managerUnlocked>15000</managerUnlocked>
-            <palliers></palliers>
+            <palliers>
+                <pallier>
+                    <name>Unlock A2</name>
+                    <logo></logo>
+                    <seuil>30</seuil>
+                    <idcible>0</idcible>
+                    <ratio>1.2</ratio>
+                    <typeratio>vitesse</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Unlock B2</name>
+                    <logo></logo>
+                    <seuil>25</seuil>
+                    <idcible>0</idcible>
+                    <ratio>1.5</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+            </palliers>
         </product>
         <product>
-            <id></id>
-            <name></name>
-            <logo></logo>
-            <cout></cout>
-            <croissance></croissance>
-            <revenu></revenu>
-            <vitesse></vitesse>
-            <quantite></quantite>
-            <timeleft></timeleft>
-            <managerUnlocked></managerUnlocked>
+            <id>3</id>
+            <name>king</name>
+            <logo>greg.jpg</logo>
+            <cout>20</cout>
+            <croissance>2</croissance>
+            <revenu>30</revenu>
+            <vitesse>20</vitesse>
+            <quantite>5</quantite>
+            <timeleft>1000</timeleft>
+            <managerUnlocked>false</managerUnlocked>
             <palliers>
+                <pallier>
+                    <name>Unlock A3</name>
+                    <logo></logo>
+                    <seuil>30</seuil>
+                    <idcible>0</idcible>
+                    <ratio>1.2</ratio>
+                    <typeratio>vitesse</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Unlock B3</name>
+                    <logo></logo>
+                    <seuil>25</seuil>
+                    <idcible>0</idcible>
+                    <ratio>1.5</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
             </palliers>
         </product>
     </products>
@@ -63,7 +119,7 @@ and open the template in the editor.
         <pallier>
             <name>Unlock 1</name>
             <logo></logo>
-            <seuil>10000</seuil>
+            <seuil>10</seuil>
             <idcible>0</idcible>
             <ratio>2</ratio>
             <typeratio>vitesse</typeratio>
@@ -72,7 +128,7 @@ and open the template in the editor.
         <pallier>
             <name>Unlock 2</name>
             <logo></logo>
-            <seuil>16000</seuil>
+            <seuil>16</seuil>
             <idcible>0</idcible>
             <ratio>2</ratio>
             <typeratio>gain</typeratio>
@@ -81,12 +137,43 @@ and open the template in the editor.
         <pallier>
             <name>Unlock 3</name>
             <logo></logo>
-            <seuil>20000</seuil>
+            <seuil>20</seuil>
             <idcible>0</idcible>
             <ratio>1</ratio>
             <typeratio>ange</typeratio>
             <unlocked>False</unlocked>
         </pallier>
+    </allunlocks>
+    <angelupgrades>
+        <pallier>
+            <name>Angel Upgrades 1</name>
+            <logo></logo>
+            <seuil>120000</seuil>
+            <idcible>0</idcible>
+            <ratio>2</ratio>
+            <typeratio>ange</typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+        <pallier>
+            <name>Angel Upgrades 2</name>
+            <logo></logo>
+            <seuil>240000</seuil>
+            <idcible>0</idcible>
+            <ratio>2</ratio>
+            <typeratio>ange</typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+        <pallier>
+            <name>Angel Upgrades 3</name>
+            <logo></logo>
+            <seuil>480000</seuil>
+            <idcible>0</idcible>
+            <ratio>2</ratio>
+            <typeratio>ange</typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+    </angelupgrades>
+    <managers>
         <pallier>
             <name>Petit Mayombo</name>
             <logo>lePetitMayombo.jpg</logo>
@@ -105,6 +192,8 @@ and open the template in the editor.
             <typeratio></typeratio>
             <unlocked>False</unlocked>
         </pallier>
+    </managers>
+    <cashupgrades>
         <pallier>
             <name>Cash Upgrades 1</name>
             <logo></logo>
@@ -195,39 +284,5 @@ and open the template in the editor.
             <typeratio>vitesse</typeratio>
             <unlocked>False</unlocked>
         </pallier>
-        <pallier>
-            <name>Angel Upgrades 1</name>
-            <logo></logo>
-            <seuil>120000</seuil>
-            <idcible>0</idcible>
-            <ratio>2</ratio>
-            <typeratio>ange</typeratio>
-            <unlocked>False</unlocked>
-        </pallier>
-        <pallier>
-            <name>Angel Upgrades 2</name>
-            <logo></logo>
-            <seuil>240000</seuil>
-            <idcible>0</idcible>
-            <ratio>2</ratio>
-            <typeratio>ange</typeratio>
-            <unlocked>False</unlocked>
-        </pallier>
-        <pallier>
-            <name>Cash Upgrades 3</name>
-            <logo></logo>
-            <seuil>480000</seuil>
-            <idcible>0</idcible>
-            <ratio>2</ratio>
-            <typeratio>ange</typeratio>
-            <unlocked>False</unlocked>
-        </pallier>
-    </allunlocks>
-    <upgrades>
-    </upgrades>
-    <angelupgrades>
-    </angelupgrades>
-    <managers>
-    </managers>
-
+    </cashupgrades>
 </world>

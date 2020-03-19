@@ -63,6 +63,17 @@ public class Services {
             return monde;
     }
     
+    public World deleteWorld(String username)throws JAXBException, FileNotFoundException, IOException{
+        World monde =  readWorldFromXml(username);
+        
+    }
+    
+    public double nombreAnges(World world)throws JAXBException, FileNotFoundException, IOException{
+        double nombreAnges=world.getTotalangels();
+        nombreAnges+=(150*Math.sqrt((world.getScore())/Math.pow(10,15)))-nombreAnges;
+        
+    }
+    
     public void updateMonde(World world){
         Long derniereMaj= world.getLastupdate();
         Long maintenant = System.currentTimeMillis();
@@ -137,9 +148,63 @@ public class Services {
             product.timeleft=product.vitesse;
             
         }
+        List<PallierType> t= (List<PallierType>) product.getPalliers().getPallier();
+        for (PallierType a : t){
+            if (a.isUnlocked()==false && product.getQuantite()>=a.getSeuil()){
+                a.setUnlocked(true);
+                if (a.getTyperatio()==TyperatioType.VITESSE){
+                    int b=product.getVitesse();
+                    b=(int) (b*a.getRatio());
+                    product.setVitesse(b);
+                }
+                else {
+                    double c=product.getRevenu();
+                    c=c*a.getRatio();
+                    product.setRevenu(c);
+                }
+            }
+        }
         
         saveWorldToXml(world, username);
         return true;
+    }
+    
+    public boolean updateUpgrades(String username,PallierType upgrade)throws JAXBException, IOException {
+         World world = getWorld(username);
+         if(world.getMoney()>=upgrade.getSeuil()){
+             if(upgrade.getIdcible()==0){
+                 List<ProductType> listeProduits =world.getProducts().getProduct();
+                 for (ProductType p : listeProduits){
+                     majPallier(upgrade,p);
+                 }
+                 return true;
+             }
+             else {
+                 ProductType p = findProductByID(world, upgrade.getIdcible());
+                 majPallier(upgrade, p);
+                 return true;
+             }
+            
+             
+         }
+          return false;
+    }
+    public void majPallier(PallierType pt, ProductType p ){
+        pt.setUnlocked(true);
+        if(pt.getTyperatio()== TyperatioType.VITESSE){
+            double v = p.getVitesse();
+            v=(int) (v*pt.getRatio());
+            p.setVitesse((int) v);
+            
+            
+        }
+        if (pt.getTyperatio()==TyperatioType.GAIN) {
+            
+            double c=p.getRevenu();
+                    c=c*pt.getRatio();
+                    p.setRevenu(c);
+            
+        }
     }
     public boolean updateManager(String username,PallierType newmanager) throws JAXBException, IOException{
         World world =getWorld(username);

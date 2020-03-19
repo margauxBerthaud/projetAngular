@@ -10,7 +10,9 @@ import java.io.IOException;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import static javax.swing.text.html.FormSubmitEvent.MethodType.GET;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
+import static javax.ws.rs.HttpMethod.DELETE;
 import static javax.ws.rs.HttpMethod.PUT;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
@@ -54,6 +56,18 @@ public void putManager(@Context HttpServletRequest request,PallierType manager) 
    String username = request.getHeader("X-user");
    services.updateManager(username, manager);
 }
-
+@PUT
+@Path("upgrade")
+public void putUpgrade(@Context HttpServletRequest request,PallierType upgrade) throws JAXBException, IOException{
+    String username = request.getHeader("X-user");
+    services.updateUpgrades(username, upgrade);
+}
+@DELETE
+@Path("world")
+public void deleteWorld(@Context HttpServletRequest request)throws JAXBException, IOException{
+    String username = request.getHeader("X-user");
+    Response.ok(services.getWorld(username)).build();
     
 }
+}
+
