@@ -69,6 +69,11 @@ public void deleteWorld(@Context HttpServletRequest request)throws JAXBException
     services.deleteWorld(username);
     
 }
-
+@PUT
+@Path("angelupgrade")
+public void angelUpgrade(@Context HttpServletRequest request,PallierType ange)throws JAXBException, IOException{
+    String username = request.getHeader("X-user");
+    services.angelUpgrade(username, ange);
+}
 }
 

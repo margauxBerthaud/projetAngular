@@ -251,7 +251,22 @@ public class Services {
         
     }
     
-   // public void angelUpgrade(String username, PallierType )
+   public void angelUpgrade(String username, PallierType ange) throws JAXBException, IOException{
+       int a=ange.getSeuil();
+       World world =getWorld(username);
+       double angeActif=world.getActiveangels();
+       double newAngeActif=angeActif-a;
+       if(ange.getTyperatio()==TyperatioType.ANGE){
+           int angeBonus=world.getAngelbonus();
+           angeBonus+=angeBonus+ange.getRatio();
+           world.setAngelbonus(angeBonus);
+           //demander
+       }
+       else {
+           updateUpgrades(username,ange);
+       }
+       world.setActiveangels(newAngeActif);
+   }
     
     
     
