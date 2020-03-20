@@ -66,8 +66,9 @@ public void putUpgrade(@Context HttpServletRequest request,PallierType upgrade) 
 @Path("world")
 public void deleteWorld(@Context HttpServletRequest request)throws JAXBException, IOException{
     String username = request.getHeader("X-user");
-    Response.ok(services.getWorld(username)).build();
+    services.deleteWorld(username);
     
 }
+
 }
 

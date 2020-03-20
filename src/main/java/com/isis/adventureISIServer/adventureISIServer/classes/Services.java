@@ -63,14 +63,31 @@ public class Services {
             return monde;
     }
     
-    public World deleteWorld(String username)throws JAXBException, FileNotFoundException, IOException{
+    public void deleteWorld(String username)throws JAXBException, FileNotFoundException, IOException{
         World monde =  readWorldFromXml(username);
+        double angeActif=monde.getActiveangels();
+        double angeTotal=monde.getTotalangels();
+        double aRajouter=nombreAnges(monde);
+        angeActif+= angeActif + aRajouter ;
+        angeTotal+= angeTotal + aRajouter;
+        double score=monde.getScore();
+        
+        
+        JAXBContext cont = JAXBContext.newInstance(World.class);
+        Unmarshaller u = cont.createUnmarshaller();
+        World world = (World) u.unmarshal(input);
+        world.setActiveangels(angeActif);
+        world.setTotalangels(angeTotal);
+        world.setScore(score);
+        saveWorldToXml(world, username);
+        
         
     }
     
     public double nombreAnges(World world)throws JAXBException, FileNotFoundException, IOException{
         double nombreAnges=world.getTotalangels();
-        nombreAnges+=(150*Math.sqrt((world.getScore())/Math.pow(10,15)))-nombreAnges;
+        double angeToClaim=Math.round(150*Math.sqrt((world.getScore())/Math.pow(10,15)))-nombreAnges;
+        return angeToClaim;
         
     }
     
@@ -78,13 +95,14 @@ public class Services {
         Long derniereMaj= world.getLastupdate();
         Long maintenant = System.currentTimeMillis();
         Long delta= maintenant-derniereMaj;
+        int angeBonus=world.getAngelbonus();
         List<ProductType> pt = (List<ProductType>) world.getProducts();
         for (ProductType a :pt){
             if (a.isManagerUnlocked()){
                 int tempsProduit=a.getVitesse();
                 int nbrePd= (int) (delta/tempsProduit);
                 long restant = a.getVitesse()-delta%tempsProduit;
-                double argent =a.getRevenu()*nbrePd;
+                double argent =a.getRevenu()*nbrePd*(1+world.getActiveangels()*angeBonus/100);
                 world.setMoney(world.getMoney()+argent);
                 world.setScore(world.getScore()+argent);
                 a.setTimeleft(restant);
@@ -232,6 +250,8 @@ public class Services {
         return true;
         
     }
+    
+   // public void angelUpgrade(String username, PallierType )
     
     
     
