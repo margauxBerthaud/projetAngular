@@ -5,7 +5,6 @@
  */
 package com.isis.adventureISIServer.adventureISIServer.classes;
 
-import static com.sun.corba.se.spi.presentation.rmi.StubAdapter.request;
 import java.io.IOException;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;

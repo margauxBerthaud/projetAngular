@@ -123,7 +123,7 @@ and open the template in the editor.
             <idcible>0</idcible>
             <ratio>2</ratio>
             <typeratio>vitesse</typeratio>
-            <unlocked>False</unlocked>
+            <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>Unlock 2</name>
@@ -132,7 +132,7 @@ and open the template in the editor.
             <idcible>0</idcible>
             <ratio>2</ratio>
             <typeratio>gain</typeratio>
-            <unlocked>False</unlocked>
+            <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>Unlock 3</name>
@@ -141,7 +141,7 @@ and open the template in the editor.
             <idcible>0</idcible>
             <ratio>1</ratio>
             <typeratio>ange</typeratio>
-            <unlocked>False</unlocked>
+            <unlocked>false</unlocked>
         </pallier>
     </allunlocks>
     <angelupgrades>
@@ -152,7 +152,7 @@ and open the template in the editor.
             <idcible>0</idcible>
             <ratio>2</ratio>
             <typeratio>ange</typeratio>
-            <unlocked>False</unlocked>
+            <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>Angel Upgrades 2</name>
@@ -161,7 +161,7 @@ and open the template in the editor.
             <idcible>0</idcible>
             <ratio>2</ratio>
             <typeratio>ange</typeratio>
-            <unlocked>False</unlocked>
+            <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>Angel Upgrades 3</name>
@@ -170,7 +170,7 @@ and open the template in the editor.
             <idcible>0</idcible>
             <ratio>2</ratio>
             <typeratio>ange</typeratio>
-            <unlocked>False</unlocked>
+            <unlocked>false</unlocked>
         </pallier>
     </angelupgrades>
     <managers>
@@ -181,7 +181,7 @@ and open the template in the editor.
             <idcible>1</idcible>
             <ratio></ratio>
             <typeratio></typeratio>
-            <unlocked>False</unlocked>
+            <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>Catalia</name>
@@ -190,10 +190,10 @@ and open the template in the editor.
             <idcible>2</idcible>
             <ratio></ratio>
             <typeratio></typeratio>
-            <unlocked>False</unlocked>
+            <unlocked>false</unlocked>
         </pallier>
     </managers>
-    <cashupgrades>
+    <upgrades>
         <pallier>
             <name>Cash Upgrades 1</name>
             <logo></logo>
@@ -201,7 +201,7 @@ and open the template in the editor.
             <idcible>1</idcible>
             <ratio>2</ratio>
             <typeratio>vitesse</typeratio>
-            <unlocked>False</unlocked>
+            <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>Cash Upgrades 2</name>
@@ -210,7 +210,7 @@ and open the template in the editor.
             <idcible>1</idcible>
             <ratio>2</ratio>
             <typeratio>vitesse</typeratio>
-            <unlocked>False</unlocked>
+            <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>Cash Upgrades 3</name>
@@ -219,7 +219,7 @@ and open the template in the editor.
             <idcible>2</idcible>
             <ratio>2</ratio>
             <typeratio>gain</typeratio>
-            <unlocked>False</unlocked>
+            <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>Cash Upgrades 4</name>
@@ -228,7 +228,7 @@ and open the template in the editor.
             <idcible>1</idcible>
             <ratio>2</ratio>
             <typeratio>gain</typeratio>
-            <unlocked>False</unlocked>
+            <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>Cash Upgrades 5</name>
@@ -237,7 +237,7 @@ and open the template in the editor.
             <idcible>1</idcible>
             <ratio>2</ratio>
             <typeratio>vitesse</typeratio>
-            <unlocked>False</unlocked>
+            <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>Cash Upgrades 6</name>
@@ -246,7 +246,7 @@ and open the template in the editor.
             <idcible>1</idcible>
             <ratio>2</ratio>
             <typeratio>vitesse</typeratio>
-            <unlocked>False</unlocked>
+            <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>Cash Upgrades 7</name>
@@ -255,7 +255,7 @@ and open the template in the editor.
             <idcible>2</idcible>
             <ratio>2</ratio>
             <typeratio>vitesse</typeratio>
-            <unlocked>False</unlocked>
+            <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>Cash Upgrades 8</name>
@@ -264,7 +264,7 @@ and open the template in the editor.
             <idcible>1</idcible>
             <ratio>2</ratio>
             <typeratio>gain</typeratio>
-            <unlocked>False</unlocked>
+            <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>Cash Upgrades 9</name>
@@ -273,7 +273,7 @@ and open the template in the editor.
             <idcible>2</idcible>
             <ratio>2</ratio>
             <typeratio>gain</typeratio>
-            <unlocked>False</unlocked>
+            <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>Cash Upgrades 10</name>
@@ -282,7 +282,7 @@ and open the template in the editor.
             <idcible>1</idcible>
             <ratio>2</ratio>
             <typeratio>vitesse</typeratio>
-            <unlocked>False</unlocked>
+            <unlocked>false</unlocked>
         </pallier>
-    </cashupgrades>
+    </upgrades>
 </world>
