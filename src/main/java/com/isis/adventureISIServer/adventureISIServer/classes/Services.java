@@ -122,8 +122,7 @@ public class Services {
     
     public ProductType findProductByID(World world, int id ){
         ProductType pt = null;
-        List<ProductType> t= (List<ProductType>) world.getProducts();
-        for (ProductType a :t){
+        for (ProductType a :world.getProducts().product){
             if (id == a.id){
                 pt=a;
             }
@@ -133,8 +132,7 @@ public class Services {
     
     public PallierType findManagerByName(World world, String name){
         PallierType manager=null;
-        List<PallierType> pt = (List<PallierType>) world.getManagers();
-        for (PallierType a: pt){
+        for (PallierType a: world.getManagers().pallier){
             if(name.equals(a.getName())){
                 manager=a;
             }
