@@ -20,11 +20,11 @@ and open the template in the editor.
     <products>
         <product>
             <id>1</id>
-            <name>Julien Tanti</name>
-            <logo>julien-tanti.jpg</logo>
+            <name>Maeva</name>
+            <logo>maeva.jpg</logo>
             <cout>4</cout>
-            <croissance>2</croissance>
-            <revenu>3</revenu>
+            <croissance>7</croissance>
+            <revenu>1</revenu>
             <vitesse>25</vitesse>
             <quantite>15</quantite>
             <timeleft>200</timeleft>
@@ -52,12 +52,12 @@ and open the template in the editor.
         </product>
         <product>
             <id>2</id>
-            <name>Jessica</name>
-            <logo>jessica-dans-premiere-tele-rio.jpg</logo>
+            <name>Greg</name>
+            <logo>greg.jpg</logo>
             <cout>60</cout>
             <croissance>1,15</croissance>
             <revenu>60</revenu>
-            <vitesse>8</vitesse>
+            <vitesse>20</vitesse>
             <quantite>12</quantite>
             <timeleft>300</timeleft>
             <managerUnlocked>15000</managerUnlocked>
@@ -84,11 +84,11 @@ and open the template in the editor.
         </product>
         <product>
             <id>3</id>
-            <name>king</name>
-            <logo>greg.jpg</logo>
-            <cout>20</cout>
-            <croissance>2</croissance>
-            <revenu>30</revenu>
+            <name>Kevin</name>
+            <logo>kevin.jpg</logo>
+            <cout>720</cout>
+            <croissance>1,14</croissance>
+            <revenu>540</revenu>
             <vitesse>20</vitesse>
             <quantite>5</quantite>
             <timeleft>1000</timeleft>
@@ -105,6 +105,70 @@ and open the template in the editor.
                 </pallier>
                 <pallier>
                     <name>Unlock B3</name>
+                    <logo></logo>
+                    <seuil>25</seuil>
+                    <idcible>0</idcible>
+                    <ratio>1.5</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+        <product>
+            <id>4</id>
+            <name>Paga</name>
+            <logo>paga.jpeg</logo>
+            <cout>8640</cout>
+            <croissance>1,13</croissance>
+            <revenu>4320</revenu>
+            <vitesse>20</vitesse>
+            <quantite>5</quantite>
+            <timeleft>1000</timeleft>
+            <managerUnlocked>false</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>Unlock A4</name>
+                    <logo></logo>
+                    <seuil>30</seuil>
+                    <idcible>0</idcible>
+                    <ratio>1.2</ratio>
+                    <typeratio>vitesse</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Unlock B4</name>
+                    <logo></logo>
+                    <seuil>25</seuil>
+                    <idcible>0</idcible>
+                    <ratio>1.5</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+        <product>
+            <id>5</id>
+            <name>Jessica</name>
+            <logo>jessica-dans-premiere-tele-rio.jpg</logo>
+            <cout>20</cout>
+            <croissance>2</croissance>
+            <revenu>30</revenu>
+            <vitesse>20</vitesse>
+            <quantite>5</quantite>
+            <timeleft>1000</timeleft>
+            <managerUnlocked>false</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>Unlock A5</name>
+                    <logo></logo>
+                    <seuil>30</seuil>
+                    <idcible>0</idcible>
+                    <ratio>1.2</ratio>
+                    <typeratio>vitesse</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Unlock B5</name>
                     <logo></logo>
                     <seuil>25</seuil>
                     <idcible>0</idcible>
