@@ -55,7 +55,7 @@ and open the template in the editor.
             <name>Greg</name>
             <logo>greg.jpg</logo>
             <cout>60</cout>
-            <croissance>1,15</croissance>
+            <croissance>1.15</croissance>
             <revenu>60</revenu>
             <vitesse>20</vitesse>
             <quantite>12</quantite>
@@ -87,7 +87,7 @@ and open the template in the editor.
             <name>Kevin</name>
             <logo>kevin.jpg</logo>
             <cout>720</cout>
-            <croissance>1,14</croissance>
+            <croissance>1.14</croissance>
             <revenu>540</revenu>
             <vitesse>20</vitesse>
             <quantite>5</quantite>
@@ -119,7 +119,7 @@ and open the template in the editor.
             <name>Paga</name>
             <logo>paga.jpeg</logo>
             <cout>8640</cout>
-            <croissance>1,13</croissance>
+            <croissance>1.13</croissance>
             <revenu>4320</revenu>
             <vitesse>20</vitesse>
             <quantite>5</quantite>
@@ -150,9 +150,9 @@ and open the template in the editor.
             <id>5</id>
             <name>Jessica</name>
             <logo>jessica-dans-premiere-tele-rio.jpg</logo>
-            <cout>20</cout>
-            <croissance>2</croissance>
-            <revenu>30</revenu>
+            <cout>103680</cout>
+            <croissance>1,12</croissance>
+            <revenu>51840</revenu>
             <vitesse>20</vitesse>
             <quantite>5</quantite>
             <timeleft>1000</timeleft>
@@ -169,6 +169,38 @@ and open the template in the editor.
                 </pallier>
                 <pallier>
                     <name>Unlock B5</name>
+                    <logo></logo>
+                    <seuil>25</seuil>
+                    <idcible>0</idcible>
+                    <ratio>1.5</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+        <product>
+            <id>6</id>
+            <name>Julien</name>
+            <logo>julien-tanti.jpg</logo>
+            <cout>1244860</cout>
+            <croissance>1.11</croissance>
+            <revenu>622080</revenu>
+            <vitesse>20</vitesse>
+            <quantite>5</quantite>
+            <timeleft>1000</timeleft>
+            <managerUnlocked>false</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>Unlock A6</name>
+                    <logo></logo>
+                    <seuil>30</seuil>
+                    <idcible>0</idcible>
+                    <ratio>1.2</ratio>
+                    <typeratio>vitesse</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Unlock B6</name>
                     <logo></logo>
                     <seuil>25</seuil>
                     <idcible>0</idcible>
@@ -252,6 +284,15 @@ and open the template in the editor.
             <logo>Manager2.jpg</logo>
             <seuil>15000</seuil>
             <idcible>2</idcible>
+            <ratio></ratio>
+            <typeratio></typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Manager 3</name>
+            <logo>Manager3.jpg</logo>
+            <seuil>3000000</seuil>
+            <idcible>3</idcible>
             <ratio></ratio>
             <typeratio></typeratio>
             <unlocked>false</unlocked>
