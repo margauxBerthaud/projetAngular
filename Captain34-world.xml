@@ -1,68 +1,125 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <world>
-    <name>Les Marseillais2</name>
+    <name>Les Marseillais</name>
     <logo></logo>
-    <money>10.0</money>
-    <score>0.0</score>
-    <totalangels>0.0</totalangels>
-    <activeangels>0.0</activeangels>
-    <angelbonus>0</angelbonus>
+    <money>-122277.89999999997</money>
+    <score>53978.10000000006</score>
+    <totalangels>1.0</totalangels>
+    <activeangels>1.0</activeangels>
+    <angelbonus>2</angelbonus>
     <lastupdate>0</lastupdate>
     <products>
         <product>
             <id>1</id>
             <name>Julien Tanti</name>
-            <logo>http://localhost:8080/images/kevin.jpg</logo>
+            <logo>julien-tanti.jpg</logo>
             <cout>4.0</cout>
-            <croissance>0.0</croissance>
-            <revenu>1.0</revenu>
+            <croissance>2.0</croissance>
+            <revenu>3.0</revenu>
             <vitesse>2000</vitesse>
-            <quantite>0</quantite>
+            <quantite>22</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
-            <palliers/>
+            <palliers>
+                <pallier>
+                    <name>Unlock A1</name>
+                    <logo></logo>
+                    <seuil>30</seuil>
+                    <idcible>0</idcible>
+                    <ratio>1.2</ratio>
+                    <typeratio>vitesse</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Unlock B1</name>
+                    <logo></logo>
+                    <seuil>25</seuil>
+                    <idcible>0</idcible>
+                    <ratio>1.5</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+            </palliers>
         </product>
         <product>
             <id>2</id>
             <name>Jessica</name>
-            <logo></logo>
+            <logo>jessica-dans-premiere-tele-rio.jpg</logo>
             <cout>60.0</cout>
             <croissance>0.0</croissance>
             <revenu>60.0</revenu>
-            <vitesse>3000</vitesse>
-            <quantite>0</quantite>
+            <vitesse>4000</vitesse>
+            <quantite>12</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
-            <palliers/>
+            <palliers>
+                <pallier>
+                    <name>Unlock A2</name>
+                    <logo></logo>
+                    <seuil>30</seuil>
+                    <idcible>0</idcible>
+                    <ratio>1.2</ratio>
+                    <typeratio>vitesse</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Unlock B2</name>
+                    <logo></logo>
+                    <seuil>25</seuil>
+                    <idcible>0</idcible>
+                    <ratio>1.5</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+            </palliers>
         </product>
         <product>
-            <id>0</id>
-            <name></name>
-            <logo></logo>
-            <cout>0.0</cout>
-            <croissance>0.0</croissance>
-            <revenu>0.0</revenu>
-            <vitesse>0</vitesse>
-            <quantite>0</quantite>
+            <id>3</id>
+            <name>king</name>
+            <logo>greg.jpg</logo>
+            <cout>20.0</cout>
+            <croissance>2.0</croissance>
+            <revenu>45.0</revenu>
+            <vitesse>4000</vitesse>
+            <quantite>30</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
-            <palliers/>
+            <palliers>
+                <pallier>
+                    <name>Unlock A3</name>
+                    <logo></logo>
+                    <seuil>30</seuil>
+                    <idcible>0</idcible>
+                    <ratio>1.2</ratio>
+                    <typeratio>vitesse</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Unlock B3</name>
+                    <logo></logo>
+                    <seuil>25</seuil>
+                    <idcible>0</idcible>
+                    <ratio>1.5</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>true</unlocked>
+                </pallier>
+            </palliers>
         </product>
     </products>
     <allunlocks>
         <pallier>
             <name>Unlock 1</name>
             <logo></logo>
-            <seuil>10000</seuil>
+            <seuil>10</seuil>
             <idcible>0</idcible>
             <ratio>2.0</ratio>
             <typeratio>vitesse</typeratio>
-            <unlocked>false</unlocked>
+            <unlocked>true</unlocked>
         </pallier>
         <pallier>
             <name>Unlock 2</name>
             <logo></logo>
-            <seuil>16000</seuil>
+            <seuil>16</seuil>
             <idcible>0</idcible>
             <ratio>2.0</ratio>
             <typeratio>gain</typeratio>
@@ -71,28 +128,14 @@
         <pallier>
             <name>Unlock 3</name>
             <logo></logo>
-            <seuil>20000</seuil>
+            <seuil>20</seuil>
             <idcible>0</idcible>
             <ratio>1.0</ratio>
             <typeratio>ange</typeratio>
             <unlocked>false</unlocked>
         </pallier>
-        <pallier>
-            <name>JCVD</name>
-            <logo></logo>
-            <seuil>1000</seuil>
-            <idcible>1</idcible>
-            <ratio>0.0</ratio>
-            <unlocked>false</unlocked>
-        </pallier>
-        <pallier>
-            <name>Catalia</name>
-            <logo></logo>
-            <seuil>15000</seuil>
-            <idcible>2</idcible>
-            <ratio>0.0</ratio>
-            <unlocked>false</unlocked>
-        </pallier>
+    </allunlocks>
+    <upgrades>
         <pallier>
             <name>Cash Upgrades 1</name>
             <logo></logo>
@@ -183,6 +226,8 @@
             <typeratio>vitesse</typeratio>
             <unlocked>false</unlocked>
         </pallier>
+    </upgrades>
+    <angelupgrades>
         <pallier>
             <name>Angel Upgrades 1</name>
             <logo></logo>
@@ -202,7 +247,7 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Cash Upgrades 3</name>
+            <name>Angel Upgrades 3</name>
             <logo></logo>
             <seuil>480000</seuil>
             <idcible>0</idcible>
@@ -210,8 +255,23 @@
             <typeratio>ange</typeratio>
             <unlocked>false</unlocked>
         </pallier>
-    </allunlocks>
-    <upgrades/>
-    <angelupgrades/>
-    <managers/>
+    </angelupgrades>
+    <managers>
+        <pallier>
+            <name>Petit Mayombo</name>
+            <logo>lePetitMayombo.jpg</logo>
+            <seuil>1000</seuil>
+            <idcible>1</idcible>
+            <ratio>0.0</ratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Catalia</name>
+            <logo>Manager2.jpg</logo>
+            <seuil>15000</seuil>
+            <idcible>2</idcible>
+            <ratio>0.0</ratio>
+            <unlocked>false</unlocked>
+        </pallier>
+    </managers>
 </world>

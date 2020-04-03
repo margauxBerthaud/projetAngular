@@ -25,9 +25,9 @@ and open the template in the editor.
             <cout>4</cout>
             <croissance>7</croissance>
             <revenu>1</revenu>
-            <vitesse>25</vitesse>
+            <vitesse>2500</vitesse>
             <quantite>15</quantite>
-            <timeleft>200</timeleft>
+            <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
@@ -57,9 +57,9 @@ and open the template in the editor.
             <cout>60</cout>
             <croissance>1.15</croissance>
             <revenu>60</revenu>
-            <vitesse>20</vitesse>
+            <vitesse>2000</vitesse>
             <quantite>12</quantite>
-            <timeleft>300</timeleft>
+            <timeleft>0</timeleft>
             <managerUnlocked>15000</managerUnlocked>
             <palliers>
                 <pallier>
@@ -89,9 +89,9 @@ and open the template in the editor.
             <cout>720</cout>
             <croissance>1.14</croissance>
             <revenu>540</revenu>
-            <vitesse>20</vitesse>
+            <vitesse>5000</vitesse>
             <quantite>5</quantite>
-            <timeleft>1000</timeleft>
+            <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
@@ -121,9 +121,9 @@ and open the template in the editor.
             <cout>8640</cout>
             <croissance>1.13</croissance>
             <revenu>4320</revenu>
-            <vitesse>20</vitesse>
+            <vitesse>5000</vitesse>
             <quantite>5</quantite>
-            <timeleft>1000</timeleft>
+            <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
@@ -153,9 +153,9 @@ and open the template in the editor.
             <cout>103680</cout>
             <croissance>1,12</croissance>
             <revenu>51840</revenu>
-            <vitesse>20</vitesse>
+            <vitesse>4000</vitesse>
             <quantite>5</quantite>
-            <timeleft>1000</timeleft>
+            <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
@@ -185,9 +185,9 @@ and open the template in the editor.
             <cout>1244860</cout>
             <croissance>1.11</croissance>
             <revenu>622080</revenu>
-            <vitesse>20</vitesse>
+            <vitesse>5000</vitesse>
             <quantite>5</quantite>
-            <timeleft>1000</timeleft>
+            <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>

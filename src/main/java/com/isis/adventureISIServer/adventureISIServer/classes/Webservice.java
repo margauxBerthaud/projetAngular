@@ -6,6 +6,7 @@
 package com.isis.adventureISIServer.adventureISIServer.classes;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import static javax.swing.text.html.FormSubmitEvent.MethodType.GET;
@@ -28,7 +29,7 @@ import javax.xml.bind.JAXBException;
 @Path("generic")
 public class Webservice {
     Services services;
-    
+    static ArrayList<Long> tempMoyen = new ArrayList<>();
     //ProductType product=new Gson().fromJson(data, ProductType.class);
     public Webservice(){
         services = new Services();
@@ -45,8 +46,18 @@ public Response getXml(@Context HttpServletRequest request) throws JAXBException
 @PUT
 @Path("product")
 public void putProduct(@Context HttpServletRequest request,ProductType product) throws JAXBException, IOException{
-   String username = request.getHeader("X-user");
-   services.updateProduct(username, product);
+    long before = System.currentTimeMillis();
+        String username = request.getHeader("X-user");
+        services.updateProduct(username, product);
+        long after = System.currentTimeMillis();
+        tempMoyen.add(after-before);
+        if(tempMoyen.size() % 10 == 0){
+            double sum = 0;
+            for(int i = 0; i < tempMoyen.size(); i++) {
+                sum = sum + tempMoyen.get(i);
+            }
+        }
+
 }
 
 @PUT
