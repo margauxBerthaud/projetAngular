@@ -141,6 +141,7 @@ public class Services {
     
     public Boolean updateProduct(String username, ProductType newproduct) throws JAXBException, IOException{
         World world = getWorld(username);
+        world.setLastupdate(System.currentTimeMillis());
         ProductType product = findProductByID(world, newproduct.getId());
         if (product == null){
             return false;
@@ -148,6 +149,7 @@ public class Services {
         
         int qtchange =newproduct.getQuantite() - product.getQuantite();
         if (qtchange>0){
+            int ancienneQuantite=product.getQuantite();
             double argent =world.getMoney();
             double q =product.getCroissance();
             //double prix= newproduct.cout*qtchange;
@@ -156,27 +158,23 @@ public class Services {
             double argentRestant = argent- prix2;
             world.setMoney(argentRestant);
             product.setQuantite(newproduct.getQuantite());
+            product.setCout(Math.pow(product.getCroissance(), qtchange)*prix1);
+            if (ancienneQuantite != 0){
+                double newRevenu=(product.getRevenu() / ancienneQuantite)*product.getQuantite();
+                product.setRevenu(newRevenu);
+            }
             
             
         }
         else {
+           
             product.timeleft=product.vitesse;
             
         }
         List<PallierType> t= (List<PallierType>) product.getPalliers().getPallier();
         for (PallierType a : t){
             if (a.isUnlocked()==false && product.getQuantite()>=a.getSeuil()){
-                a.setUnlocked(true);
-                if (a.getTyperatio()==TyperatioType.VITESSE){
-                    int b=product.getVitesse();
-                    b=(int) (b*a.getRatio());
-                    product.setVitesse(b);
-                }
-                else {
-                    double c=product.getRevenu();
-                    c=c*a.getRatio();
-                    product.setRevenu(c);
-                }
+               majPallier(a, product);
             }
         }
         
