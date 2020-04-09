@@ -57,8 +57,6 @@ public class Services {
     public World getWorld(String username) throws JAXBException, FileNotFoundException, IOException{
         
         World monde =  readWorldFromXml(username);
-          
-        saveWorldToXml(monde, username);
             return monde;
     }
     

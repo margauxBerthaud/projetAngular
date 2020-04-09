@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <world>
     <name>Les Marseillais</name>
-    <logo></logo>
-    <money>-122277.89999999997</money>
+    <logo>marseillais.jpg</logo>
+    <money>0</money>
     <score>53978.10000000006</score>
     <totalangels>1.0</totalangels>
     <activeangels>1.0</activeangels>

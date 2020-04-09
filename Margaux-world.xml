@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <world>
     <name>Les Marseillais2</name>
-    <logo></logo>
+    <logo>marseillais.jpg</logo>
     <money>10.0</money>
     <score>0.0</score>
     <totalangels>0.0</totalangels>

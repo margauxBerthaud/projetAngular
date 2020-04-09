@@ -10,7 +10,7 @@ and open the template in the editor.
     xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
     xsi:noNamespaceSchemaLocation='jaxb/world/worldSchema.xsd'>
     <name>Les Marseillais</name>
-    <logo></logo>
+    <logo>marseillais.jpg</logo>
     <money>15</money>
     <score>15</score>
     <totalangels>1</totalangels>
