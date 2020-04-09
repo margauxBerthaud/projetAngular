@@ -32,7 +32,7 @@ and open the template in the editor.
             <palliers>
                 <pallier>
                     <name>Unlock A1</name>
-                    <logo></logo>
+                    <logo>vitesse.jpeg</logo>
                     <seuil>30</seuil>
                     <idcible>0</idcible>
                     <ratio>1.2</ratio>
@@ -41,7 +41,7 @@ and open the template in the editor.
                 </pallier>
                 <pallier>
                     <name>Unlock B1</name>
-                    <logo></logo>
+                    <logo>gain.jpg</logo>
                     <seuil>25</seuil>
                     <idcible>0</idcible>
                     <ratio>1.5</ratio>
@@ -64,7 +64,7 @@ and open the template in the editor.
             <palliers>
                 <pallier>
                     <name>Unlock A2</name>
-                    <logo></logo>
+                    <logo>vitesse.jpeg</logo>
                     <seuil>30</seuil>
                     <idcible>0</idcible>
                     <ratio>1.2</ratio>
@@ -73,7 +73,7 @@ and open the template in the editor.
                 </pallier>
                 <pallier>
                     <name>Unlock B2</name>
-                    <logo></logo>
+                    <logo>gain.jpg</logo>
                     <seuil>25</seuil>
                     <idcible>0</idcible>
                     <ratio>1.5</ratio>
@@ -96,7 +96,7 @@ and open the template in the editor.
             <palliers>
                 <pallier>
                     <name>Unlock A3</name>
-                    <logo></logo>
+                    <logo>vitesse.jpeg</logo>
                     <seuil>30</seuil>
                     <idcible>0</idcible>
                     <ratio>1.2</ratio>
@@ -105,7 +105,7 @@ and open the template in the editor.
                 </pallier>
                 <pallier>
                     <name>Unlock B3</name>
-                    <logo></logo>
+                    <logo>gain.jpg</logo>
                     <seuil>25</seuil>
                     <idcible>0</idcible>
                     <ratio>1.5</ratio>
@@ -128,7 +128,7 @@ and open the template in the editor.
             <palliers>
                 <pallier>
                     <name>Unlock A4</name>
-                    <logo></logo>
+                    <logo>vitesse.jpeg</logo>
                     <seuil>30</seuil>
                     <idcible>0</idcible>
                     <ratio>1.2</ratio>
@@ -137,7 +137,7 @@ and open the template in the editor.
                 </pallier>
                 <pallier>
                     <name>Unlock B4</name>
-                    <logo></logo>
+                    <logo>gain.jpg</logo>
                     <seuil>25</seuil>
                     <idcible>0</idcible>
                     <ratio>1.5</ratio>
@@ -160,7 +160,7 @@ and open the template in the editor.
             <palliers>
                 <pallier>
                     <name>Unlock A5</name>
-                    <logo></logo>
+                    <logo>vitesse.jpeg</logo>
                     <seuil>30</seuil>
                     <idcible>0</idcible>
                     <ratio>1.2</ratio>
@@ -169,7 +169,7 @@ and open the template in the editor.
                 </pallier>
                 <pallier>
                     <name>Unlock B5</name>
-                    <logo></logo>
+                    <logo>gain.jpg</logo>
                     <seuil>25</seuil>
                     <idcible>0</idcible>
                     <ratio>1.5</ratio>
@@ -192,7 +192,7 @@ and open the template in the editor.
             <palliers>
                 <pallier>
                     <name>Unlock A6</name>
-                    <logo></logo>
+                    <logo>vitesse.jpeg</logo>
                     <seuil>30</seuil>
                     <idcible>0</idcible>
                     <ratio>1.2</ratio>
@@ -201,7 +201,7 @@ and open the template in the editor.
                 </pallier>
                 <pallier>
                     <name>Unlock B6</name>
-                    <logo></logo>
+                    <logo>gain.jpg</logo>
                     <seuil>25</seuil>
                     <idcible>0</idcible>
                     <ratio>1.5</ratio>
@@ -214,7 +214,7 @@ and open the template in the editor.
     <allunlocks>
         <pallier>
             <name>Unlock 1</name>
-            <logo></logo>
+            <logo>vitesse.jpeg</logo>
             <seuil>10</seuil>
             <idcible>0</idcible>
             <ratio>2</ratio>
@@ -223,7 +223,7 @@ and open the template in the editor.
         </pallier>
         <pallier>
             <name>Unlock 2</name>
-            <logo></logo>
+            <logo>gain.jpg</logo>
             <seuil>16</seuil>
             <idcible>0</idcible>
             <ratio>2</ratio>
@@ -232,7 +232,7 @@ and open the template in the editor.
         </pallier>
         <pallier>
             <name>Unlock 3</name>
-            <logo></logo>
+            <logo>ange.jpg</logo>
             <seuil>20</seuil>
             <idcible>0</idcible>
             <ratio>1</ratio>
@@ -243,7 +243,7 @@ and open the template in the editor.
     <angelupgrades>
         <pallier>
             <name>Angel Upgrades 1</name>
-            <logo></logo>
+            <logo>ange.jpg</logo>
             <seuil>120000</seuil>
             <idcible>0</idcible>
             <ratio>2</ratio>
@@ -252,7 +252,7 @@ and open the template in the editor.
         </pallier>
         <pallier>
             <name>Angel Upgrades 2</name>
-            <logo></logo>
+            <logo>ange.jpg</logo>
             <seuil>240000</seuil>
             <idcible>0</idcible>
             <ratio>2</ratio>
@@ -261,7 +261,7 @@ and open the template in the editor.
         </pallier>
         <pallier>
             <name>Angel Upgrades 3</name>
-            <logo></logo>
+            <logo>ange.jpg</logo>
             <seuil>480000</seuil>
             <idcible>0</idcible>
             <ratio>2</ratio>
@@ -301,7 +301,7 @@ and open the template in the editor.
     <upgrades>
         <pallier>
             <name>Cash Upgrades 1</name>
-            <logo></logo>
+            <logo>vitesse.jpeg</logo>
             <seuil>100</seuil>
             <idcible>1</idcible>
             <ratio>2</ratio>
@@ -310,7 +310,7 @@ and open the template in the editor.
         </pallier>
         <pallier>
             <name>Cash Upgrades 2</name>
-            <logo></logo>
+            <logo>vitesse.jpeg</logo>
             <seuil>1000</seuil>
             <idcible>1</idcible>
             <ratio>2</ratio>
@@ -319,7 +319,7 @@ and open the template in the editor.
         </pallier>
         <pallier>
             <name>Cash Upgrades 3</name>
-            <logo></logo>
+            <logo>gain.jpg</logo>
             <seuil>3000</seuil>
             <idcible>2</idcible>
             <ratio>2</ratio>
@@ -328,7 +328,7 @@ and open the template in the editor.
         </pallier>
         <pallier>
             <name>Cash Upgrades 4</name>
-            <logo></logo>
+            <logo>gain.jpg</logo>
             <seuil>6000</seuil>
             <idcible>1</idcible>
             <ratio>2</ratio>
@@ -337,7 +337,7 @@ and open the template in the editor.
         </pallier>
         <pallier>
             <name>Cash Upgrades 5</name>
-            <logo></logo>
+            <logo>vitesse.jpeg</logo>
             <seuil>12000</seuil>
             <idcible>1</idcible>
             <ratio>2</ratio>
@@ -346,7 +346,7 @@ and open the template in the editor.
         </pallier>
         <pallier>
             <name>Cash Upgrades 6</name>
-            <logo></logo>
+            <logo>vitesse.jpeg</logo>
             <seuil>15000</seuil>
             <idcible>1</idcible>
             <ratio>2</ratio>
@@ -355,7 +355,7 @@ and open the template in the editor.
         </pallier>
         <pallier>
             <name>Cash Upgrades 7</name>
-            <logo></logo>
+            <logo>vitesse.jpeg</logo>
             <seuil>20000</seuil>
             <idcible>2</idcible>
             <ratio>2</ratio>
@@ -364,7 +364,7 @@ and open the template in the editor.
         </pallier>
         <pallier>
             <name>Cash Upgrades 8</name>
-            <logo></logo>
+            <logo>gain.jpg</logo>
             <seuil>30000</seuil>
             <idcible>1</idcible>
             <ratio>2</ratio>
@@ -373,7 +373,7 @@ and open the template in the editor.
         </pallier>
         <pallier>
             <name>Cash Upgrades 9</name>
-            <logo></logo>
+            <logo>gain.jpg</logo>
             <seuil>60000</seuil>
             <idcible>2</idcible>
             <ratio>2</ratio>
@@ -382,7 +382,7 @@ and open the template in the editor.
         </pallier>
         <pallier>
             <name>Cash Upgrades 10</name>
-            <logo></logo>
+            <logo>vitesse.jpeg</logo>
             <seuil>120000</seuil>
             <idcible>1</idcible>
             <ratio>2</ratio>
