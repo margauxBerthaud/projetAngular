@@ -21,7 +21,7 @@ and open the template in the editor.
         <product>
             <id>1</id>
             <name>Maeva</name>
-            <logo>maeva.jpg</logo>
+            <logo>maeva.jpeg</logo>
             <cout>4</cout>
             <croissance>7</croissance>
             <revenu>1</revenu>
@@ -117,7 +117,7 @@ and open the template in the editor.
         <product>
             <id>4</id>
             <name>Paga</name>
-            <logo>paga.jpeg</logo>
+            <logo>paga.jpg</logo>
             <cout>8640</cout>
             <croissance>1.13</croissance>
             <revenu>4320</revenu>
